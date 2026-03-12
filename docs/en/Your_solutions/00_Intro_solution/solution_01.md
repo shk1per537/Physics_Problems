@@ -11,11 +11,13 @@ $$
 ### a) The magnitude of each vector
 
 For $\vec{a}$:
+
 $$
 |\vec{a}| = \sqrt{2^2 + 1^2 + (-3)^2} = \sqrt{4 + 1 + 9} = \sqrt{14}
 $$
 
 For $\vec{b}$:
+
 $$
 |\vec{b}| = \sqrt{4^2 + (-2)^2 + 1^2} = \sqrt{16 + 4 + 1} = \sqrt{21}
 $$
@@ -25,6 +27,7 @@ $$
 $$
 \vec{a} \cdot \vec{b} = a_x b_x + a_y b_y + a_z b_z
 $$
+
 $$
 \vec{a} \cdot \vec{b} = (2)(4) + (1)(-2) + (-3)(1) = 8 - 2 - 3 = 3
 $$
@@ -63,16 +66,19 @@ So, $\vec{a} \times \vec{b} = [-5, -14, -8]$.
 ### d) The angle between vectors $\vec{a}$ and $\vec{b}$
 
 If $\theta$ is the angle between $\vec{a}$ and $\vec{b}$, then:
+
 $$
 \cos\theta = \frac{\vec{a} \cdot \vec{b}}{|\vec{a}||\vec{b}|}
 $$
 
 Substituting the values we found earlier:
+
 $$
 \cos\theta = \frac{3}{\sqrt{14} \cdot \sqrt{21}} = \frac{3}{\sqrt{294}}
 $$
 
 Therefore, the angle is:
+
 $$
 \theta = \arccos\left(\frac{3}{\sqrt{294}}\right)
 $$
