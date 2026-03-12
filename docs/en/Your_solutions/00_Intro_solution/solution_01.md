@@ -35,30 +35,7 @@ $$
 ### c) The cross product $\vec{a} \times \vec{b}$
 
 $$
-\vec{a}\times\vec{b} = 
-\begin{bmatrix}
-a_y b_z - a_z b_y \\
-a_z b_x - a_x b_z \\
-a_x b_y - a_y b_x
-\end{bmatrix}
-=
-\begin{bmatrix}
-(1)(1) - (-3)(-2) \\
-(-3)(4) - (2)(1) \\
-(2)(-2) - (1)(4)
-\end{bmatrix}
-=
-\begin{bmatrix}
-1 - 6 \\
--12 - 2 \\
--4 - 4
-\end{bmatrix}
-=
-\begin{bmatrix}
--5 \\
--14 \\
--8
-\end{bmatrix}
+\vec{a} \times \vec{b} = \begin{bmatrix} a_y b_z - a_z b_y \\ a_z b_x - a_x b_z \\ a_x b_y - a_y b_x \end{bmatrix} = \begin{bmatrix} (1)(1) - (-3)(-2) \\ (-3)(4) - (2)(1) \\ (2)(-2) - (1)(4) \end{bmatrix} = \begin{bmatrix} 1 - 6 \\ -12 - 2 \\ -4 - 4 \end{bmatrix} = \begin{bmatrix} -5 \\ -14 \\ -8 \end{bmatrix}
 $$
 
 So, $\vec{a} \times \vec{b} = [-5, -14, -8]$.
