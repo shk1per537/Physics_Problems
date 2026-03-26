@@ -70,4 +70,4 @@ $$
 
 ### c) Draw the trajectory using Python and discuss special cases
 
-<img width="617" height="637" alt="image" src="https://github.com/user-attachments/assets/2f0ffcf9-8d41-4b77-9b59-20672a254682" />
+<img width="495" height="511" alt="image" src="https://github.com/user-attachments/assets/9ada9480-51f8-41de-bca7-bfed9e530c3e" />
