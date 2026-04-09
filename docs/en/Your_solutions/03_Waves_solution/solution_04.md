@@ -1,4 +1,4 @@
-## Phase Difference
+## 4. Phase Difference
 
 We are analyzing the relationship between the physical distance separating two points on a wave (path difference) and their corresponding difference in phase. 
 
