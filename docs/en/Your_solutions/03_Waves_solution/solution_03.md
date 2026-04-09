@@ -1,4 +1,4 @@
-## Superposition Principle
+## 3. Superposition Principle
 
 We are analyzing the interference of two identical waves traveling in opposite directions. According to the principle of superposition, the resultant wave displacement $y(x,t)$ is the algebraic sum of the individual wave displacements.
 
