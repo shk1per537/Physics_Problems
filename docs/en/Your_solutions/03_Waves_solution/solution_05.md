@@ -1,4 +1,4 @@
-## Echo Ranging
+## 5. Echo Ranging
 
 We are analyzing the distance to a reflective surface based on the time it takes for an echo to return. When a sound is produced, it travels to the surface (the cliff) and then reflects back to the source. Therefore, the total time measured is for twice the distance between the source and the cliff.
 
