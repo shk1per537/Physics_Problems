@@ -1,4 +1,4 @@
-## Wave Equation
+## 6. Wave Equation
 
 We are analyzing the properties of a traveling wave given by its mathematical equation. The general form of a one-dimensional traveling wave equation is:
 
