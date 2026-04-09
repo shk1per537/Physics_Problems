@@ -1,4 +1,4 @@
-## String Harmonics
+## 2. String Harmonics
 
 We are analyzing the properties of a standing wave on a guitar string. For a string fixed at both ends, the fundamental frequency (first harmonic, which has exactly one antinode) corresponds to a wavelength that is twice the length of the string.
 
