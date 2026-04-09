@@ -1,4 +1,4 @@
-## Standing Wave Modes
+## 7. Standing Wave Modes
 
 We are analyzing the properties of a standing wave on a string. For a string fixed at both ends, each antinode corresponds to one half of a wavelength. The number of antinodes ($n$) represents the harmonic number.
 
