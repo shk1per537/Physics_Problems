@@ -1,57 +1,97 @@
-## 9. Damped Oscillator
+## 9. Vector Lorentz Force
 
-We are analyzing the behavior of a damped harmonic oscillator. The motion is described by the second-order linear ordinary differential equation:
+We are calculating the magnitude of the magnetic force acting on a moving proton using its 3D vector components. The fundamental formula for the magnetic force ($\vec{F}$) in vector form is the Lorentz force equation:
 
 $$
-m\frac{d^2x}{dt^2} + b\frac{dx}{dt} + kx = 0
+\vec{F} = q(\vec{v} \times \vec{B})
 $$
 
-where $m$ is mass, $b$ is the damping coefficient, and $k$ is the spring constant.
+To solve this, we must first find the cross product of the velocity vector ($\vec{v}$) and the magnetic field vector ($\vec{B}$), and then multiply it by the scalar charge of the proton ($q$). Finally, we calculate the magnitude of the resulting force vector.
+
+*Note: The cross product of two vectors results in a new vector that is perpendicular to both original vectors.*
 
 ---
 
-### 1. General Solution
+### Part A: The Cross Product ($\vec{v} \times \vec{B}$)
 
-To find the general solution, we assume a solution of the form $x(t) = e^{rt}$. Substituting this into the differential equation yields the characteristic algebraic equation:
+**Given Vectors:**
+* Velocity ($\vec{v}$) = $2\hat{i} - 4\hat{j} + 1\hat{k} \text{ m/s}$
+* Magnetic field ($\vec{B}$) = $1\hat{i} + 2\hat{j} - 1\hat{k} \text{ T}$
 
-$$
-mr^2 + br + k = 0
-$$
-
-Using the quadratic formula, the roots are:
+We set up the cross product using a matrix determinant:
 
 $$
-r_{1,2} = \frac{-b \pm \sqrt{b^2 - 4mk}}{2m}
+\vec{v} \times \vec{B} = \begin{vmatrix} 
+\hat{i} & \hat{j} & \hat{k} \\
+2 & -4 & 1 \\
+1 & 2 & -1 
+\end{vmatrix}
 $$
 
-Let's introduce two parameters to simplify:
-* Undamped natural frequency: $\omega_0 = \sqrt{\frac{k}{m}}$
-* Damping coefficient: $\gamma = \frac{b}{2m}$
-
-The roots can be rewritten as: $r_{1,2} = -\gamma \pm \sqrt{\gamma^2 - \omega_0^2}$. 
-The general solution is a linear combination of the roots: 
+Now, we expand the determinant across the top row ($\hat{i}$, $\hat{j}$, $\hat{k}$):
 
 $$
-x(t) = C_1 e^{r_1 t} + C_2 e^{r_2 t}
+= \hat{i} [(-4)(-1) - (1)(2)] - \hat{j} [(2)(-1) - (1)(1)] + \hat{k} [(2)(2) - (-4)(1)]
 $$
 
-### 2. Classification of Cases
+$$
+= \hat{i} [4 - 2] - \hat{j} [-2 - 1] + \hat{k} [4 - (-4)]
+$$
 
-The behavior of the system depends entirely on the discriminant ($b^2 - 4mk$):
+$$
+= 2\hat{i} - (-3)\hat{j} + 8\hat{k}
+$$
 
-* **Underdamped ($b^2 < 4mk$ or $\gamma < \omega_0$):**
-  The roots are complex conjugates: $r_{1,2} = -\gamma \pm i\omega_d$, where $\omega_d = \sqrt{\omega_0^2 - \gamma^2}$ is the damped angular frequency.
-  Solution: $x(t) = e^{-\gamma t}(A\cos(\omega_d t) + B\sin(\omega_d t))$. 
-  *Physical meaning:* The system oscillates with an exponentially decreasing amplitude.
+$$
+\vec{v} \times \vec{B} = 2\hat{i} + 3\hat{j} + 8\hat{k}
+$$
 
-* **Critically damped ($b^2 = 4mk$ or $\gamma = \omega_0$):**
-  There is one repeated real root: $r = -\gamma$.
-  Solution: $x(t) = (A + Bt)e^{-\gamma t}$. 
-  *Physical meaning:* The system returns to equilibrium as fast as possible without oscillating.
+### Part B: Magnitude of the Force
 
-* **Overdamped ($b^2 > 4mk$ or $\gamma > \omega_0$):**
-  The roots are real and negative.
-  Solution: $x(t) = A e^{r_1 t} + B e^{r_2 t}$. 
-  *Physical meaning:* The system returns to equilibrium slowly without oscillating.
+**Given Constants:**
+* Charge of a proton ($q$) $\approx 1.60 \times 10^{-19} \text{ C}$
 
-*(Note: The numerical solution, effect of parameter b, and corresponding graphs are demonstrated in the interactive visualization).*
+Now we write the full force vector by multiplying the cross product by the charge:
+
+$$
+\vec{F} = q(2\hat{i} + 3\hat{j} + 8\hat{k})
+$$
+
+To find the *magnitude* of this force ($|\vec{F}|$), we use the 3D Pythagorean theorem on the components of our cross product, and multiply by $q$:
+
+$$
+|\vec{F}| = q \sqrt{x^2 + y^2 + z^2}
+$$
+
+$$
+|\vec{F}| = (1.60 \times 10^{-19}) \cdot \sqrt{2^2 + 3^2 + 8^2}
+$$
+
+$$
+|\vec{F}| = (1.60 \times 10^{-19}) \cdot \sqrt{4 + 9 + 64}
+$$
+
+$$
+|\vec{F}| = (1.60 \times 10^{-19}) \cdot \sqrt{77}
+$$
+
+Since $\sqrt{77} \approx 8.775$:
+
+$$
+|\vec{F}| \approx (1.60 \times 10^{-19}) \cdot 8.775
+$$
+
+$$
+|\vec{F}| \approx 14.04 \times 10^{-19} \text{ N}
+$$
+
+Adjusting to proper scientific notation:
+
+$$
+|\vec{F}| \approx 1.40 \times 10^{-18} \text{ N}
+$$
+
+### Final Answer
+
+* The force vector acting on the proton is **$(3.2\hat{i} + 4.8\hat{j} + 12.8\hat{k}) \times 10^{-19} \text{ N}$**.
+* The magnitude of this magnetic force is approximately **$1.40 \times 10^{-18} \text{ N}$**.
