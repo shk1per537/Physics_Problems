@@ -1,43 +1,81 @@
-## 7. Standing Wave Modes
+## 7. Cyclotron Motion
 
-We are analyzing the properties of a standing wave on a string. For a string fixed at both ends, each antinode corresponds to one half of a wavelength. The number of antinodes ($n$) represents the harmonic number.
+We are determining the radius of the circular path an electron takes after being accelerated by an electric potential and then entering a uniform magnetic field. This problem is solved in two distinct stages. 
 
-The formula relating the length of the string ($L$), the number of antinodes ($n$), and the wavelength ($\lambda$) is:
-
-$$
-L = n \cdot \frac{\lambda}{2}
-$$
-
-We can rearrange this formula to solve for the wavelength ($\lambda$):
+First, the electric potential energy is converted into kinetic energy to give the electron its velocity. The fundamental formula for this energy conservation is:
 
 $$
-\lambda = \frac{2L}{n}
+e \cdot \Delta V = \frac{1}{2} m \cdot v^2
 $$
+
+Second, when the moving electron enters the uniform magnetic field perpendicularly, the magnetic force acts as a centripetal force, forcing it into a circular path. The formula balancing these forces is:
+
+$$
+e \cdot v \cdot B = \frac{m \cdot v^2}{r}
+$$
+
+*Note: The magnetic force always acts perpendicular to the velocity vector. This is why it continuously changes the electron's direction (causing circular motion) but does not change its actual speed.*
 
 ---
 
-### Calculating the Wavelength
+### Part A: Velocity of the Electron
 
-**Given:**
-* Length of the string ($L$) = 80 cm = 0.8 m
-* Number of antinodes ($n$) = 4
+**Given Constants:**
+* Potential difference ($\Delta V$) = 5000 V
+* Mass of an electron ($m_e$) $\approx 9.11 \times 10^{-31} \text{ kg}$
+* Elementary charge ($e$) $\approx 1.60 \times 10^{-19} \text{ C}$
 
-We need to find the wavelength ($\lambda$). Let's substitute the given values into our rearranged formula:
-
-$$
-\lambda = \frac{2 \cdot 0.8}{4}
-$$
+First, let's rearrange the energy conservation formula to solve for the electron's velocity ($v$):
 
 $$
-\lambda = \frac{1.6}{4}
+v = \sqrt{\frac{2 \cdot e \cdot \Delta V}{m_e}}
+$$
+
+Substitute the known values into the equation:
+
+$$
+v = \sqrt{\frac{2 \cdot (1.60 \times 10^{-19}) \cdot 5000}{9.11 \times 10^{-31}}}
 $$
 
 $$
-\lambda = 0.4 \text{ m}
+v = \sqrt{\frac{1.60 \times 10^{-15}}{9.11 \times 10^{-31}}}
 $$
 
-*(Alternatively, calculating in centimeters: $\lambda = \frac{2 \cdot 80}{4} = 40 \text{ cm}$)*
+$$
+v \approx \sqrt{1.756 \times 10^{15}} \approx 4.19 \times 10^7 \text{ m/s}
+$$
+
+### Part B: Radius of the Circular Path
+
+**Given Constants:**
+* Magnetic field ($B$) = 0.1 T
+* Velocity ($v$) $\approx 4.19 \times 10^7 \text{ m/s}$ (calculated in Part A)
+
+Now, let's rearrange the magnetic force formula to solve for the radius ($r$). We can cancel out one $v$ from each side of the equation:
+
+$$
+e \cdot B = \frac{m_e \cdot v}{r}
+$$
+
+$$
+r = \frac{m_e \cdot v}{e \cdot B}
+$$
+
+Substitute the values into this new equation:
+
+$$
+r = \frac{(9.11 \times 10^{-31}) \cdot (4.19 \times 10^7)}{(1.60 \times 10^{-19}) \cdot 0.1}
+$$
+
+$$
+r = \frac{38.17 \times 10^{-24}}{1.60 \times 10^{-20}}
+$$
+
+$$
+r \approx 2.38 \times 10^{-3} \text{ m}
+$$
 
 ### Final Answer
 
-* The wavelength of the standing wave is **0.4 meters** (or **40 cm**).
+* The velocity of the electron after acceleration is approximately **$4.19 \times 10^7 \text{ m/s}$**.
+* The radius of the circular path it follows in the magnetic field is approximately **$2.38 \times 10^{-3} \text{ m}$** (which is about **2.38 mm**).
