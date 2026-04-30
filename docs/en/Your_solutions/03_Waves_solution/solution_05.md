@@ -1,41 +1,73 @@
-## 5. Echo Ranging
+## 5. Field Levitation
 
-We are analyzing the distance to a reflective surface based on the time it takes for an echo to return. When a sound is produced, it travels to the surface (the cliff) and then reflects back to the source. Therefore, the total time measured is for twice the distance between the source and the cliff.
+We are determining the electric field strength required to suspend a proton in mid-air, counteracting the downward pull of Earth's gravity. For the proton to levitate, it must be in electrostatic equilibrium along the vertical axis, meaning the net force acting on it is zero. 
 
-The formula relating the round-trip distance ($2d$), wave speed ($v$), and total time for the echo ($t$) is:
-
-$$
-2d = v \cdot t
-$$
-
-To find the one-way distance to the cliff, we rearrange the formula to solve for $d$:
+The two forces involved are the downward gravitational force ($F_g$) and the upward electric force ($F_e$). Their fundamental formulas are:
 
 $$
-d = \frac{v \cdot t}{2}
+F_g = m \cdot g
 $$
+
+$$
+F_e = q \cdot E
+$$
+
+To achieve levitation, the magnitude of the upward electric force must exactly equal the magnitude of the downward gravitational force:
+
+$$
+F_e = F_g
+$$
+
+*Note: Because the proton has a positive charge, the electric field must point **upward** to exert an upward force on the particle.*
 
 ---
 
-### Calculating the Distance to the Cliff
+### Part A: Setting up the Equation
 
-**Given:**
-* Total time for the echo ($t$) = 1 s
-* Speed of sound in air ($v$) = 343 m/s
+**Given Constants:**
+* Mass of a proton ($m_p$) $\approx 1.67 \times 10^{-27} \text{ kg}$
+* Charge of a proton ($e$) $\approx 1.6 \times 10^{-19} \text{ C}$
+* Gravitational acceleration ($g$) $\approx 9.8 \text{ m/s}^2$
 
-We need to find the distance ($d$) to the cliff. Substitute the given values into our rearranged formula:
-
-$$
-d = \frac{343 \cdot 1}{2}
-$$
+Let's substitute our specific formulas into the equilibrium equation ($F_e = F_g$):
 
 $$
-d = \frac{343}{2}
+e \cdot E = m_p \cdot g
 $$
 
+To find the required electric field strength ($E$), we can rearrange the formula to solve for $E$:
+
 $$
-d = 171.5 \text{ m}
+E = \frac{m_p \cdot g}{e}
+$$
+
+### Part B: Calculating the Electric Field
+
+Now, let's substitute the known values into our rearranged equation:
+
+$$
+E = \frac{(1.67 \times 10^{-27}) \cdot 9.8}{1.6 \times 10^{-19}}
+$$
+
+First, calculate the numerator (the gravitational force):
+
+$$
+E = \frac{16.366 \times 10^{-27}}{1.6 \times 10^{-19}}
+$$
+
+Now, divide by the charge of the proton:
+
+$$
+E \approx 10.23 \times 10^{-8} \text{ N/C}
+$$
+
+To write this in proper scientific notation, we adjust the decimal:
+
+$$
+E \approx 1.02 \times 10^{-7} \text{ N/C}
 $$
 
 ### Final Answer
 
-* The cliff is exactly **171.5 meters** away from the person.
+* The strength of the electric field required to levitate the proton is approximately **$1.02 \times 10^{-7} \text{ N/C}$** (Newtons per Coulomb, or Volts per meter).
+* To push the positively charged proton upward against gravity, this electric field must be directed **vertically upward**.
